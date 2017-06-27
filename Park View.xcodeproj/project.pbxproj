@@ -21,6 +21,9 @@
 		52D644141A0FF9E500CCA056 /* MapOptionsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 52D644131A0FF9E500CCA056 /* MapOptionsViewController.swift */; };
 		52D644161A0FFB7400CCA056 /* ParkMapViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 52D644151A0FFB7400CCA056 /* ParkMapViewController.swift */; };
 		52D644181A0FFD2600CCA056 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 52D644171A0FFD2600CCA056 /* AppDelegate.swift */; };
+		D7403FFF1F01FB71001913DC /* MagicMountain.plist in Resources */ = {isa = PBXBuildFile; fileRef = D7403FFE1F01FB71001913DC /* MagicMountain.plist */; };
+		D74040011F01FC13001913DC /* Park.swift in Sources */ = {isa = PBXBuildFile; fileRef = D74040001F01FC13001913DC /* Park.swift */; };
+		D74040031F023B37001913DC /* KeenEye.plist in Resources */ = {isa = PBXBuildFile; fileRef = D74040021F023B37001913DC /* KeenEye.plist */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -41,6 +44,9 @@
 		52D644131A0FF9E500CCA056 /* MapOptionsViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MapOptionsViewController.swift; sourceTree = "<group>"; };
 		52D644151A0FFB7400CCA056 /* ParkMapViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ParkMapViewController.swift; sourceTree = "<group>"; };
 		52D644171A0FFD2600CCA056 /* AppDelegate.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		D7403FFE1F01FB71001913DC /* MagicMountain.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = MagicMountain.plist; sourceTree = "<group>"; };
+		D74040001F01FC13001913DC /* Park.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = Park.swift; path = Models/Park.swift; sourceTree = "<group>"; };
+		D74040021F023B37001913DC /* KeenEye.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = KeenEye.plist; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -62,6 +68,8 @@
 		076BF08D1680457B00ACF08A /* Park Information */ = {
 			isa = PBXGroup;
 			children = (
+				D7403FFE1F01FB71001913DC /* MagicMountain.plist */,
+				D74040021F023B37001913DC /* KeenEye.plist */,
 			);
 			name = "Park Information";
 			sourceTree = "<group>";
@@ -76,6 +84,7 @@
 		076BF0901680459E00ACF08A /* Models */ = {
 			isa = PBXGroup;
 			children = (
+				D74040001F01FC13001913DC /* Park.swift */,
 			);
 			name = Models;
 			sourceTree = "<group>";
@@ -223,7 +232,9 @@
 				07866ABD165EE2B400D7BB3A /* InfoPlist.strings in Resources */,
 				07866AC5165EE2B400D7BB3A /* Default.png in Resources */,
 				07866AC7165EE2B400D7BB3A /* Default@2x.png in Resources */,
+				D7403FFF1F01FB71001913DC /* MagicMountain.plist in Resources */,
 				07866AC9165EE2B400D7BB3A /* Default-568h@2x.png in Resources */,
+				D74040031F023B37001913DC /* KeenEye.plist in Resources */,
 				07866ACC165EE2B400D7BB3A /* MainStoryboard_iPhone.storyboard in Resources */,
 				07866ACF165EE2B400D7BB3A /* MainStoryboard_iPad.storyboard in Resources */,
 			);
@@ -239,6 +250,7 @@
 				52D644161A0FFB7400CCA056 /* ParkMapViewController.swift in Sources */,
 				52D644181A0FFD2600CCA056 /* AppDelegate.swift in Sources */,
 				52D644141A0FF9E500CCA056 /* MapOptionsViewController.swift in Sources */,
+				D74040011F01FC13001913DC /* Park.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

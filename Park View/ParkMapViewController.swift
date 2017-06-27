@@ -21,9 +21,21 @@ class ParkMapViewController: UIViewController {
     @IBOutlet weak var mapTypeSegmentedControl: UISegmentedControl!
   
     var selectedOptions = [MapOptionsType]()
+    var park = Park(filename: "MagicMountain")
   
     override func viewDidLoad() {
         super.viewDidLoad()
+        
+        let latDelta = park.overlayTopLeftCoordinate.latitude - park.overlayBottomRightCoordinate.latitude
+        
+        // Get distance from one corner to the opposite corner.
+        let span = MKCoordinateSpanMake(fabs(latDelta), 0.0)
+        
+        let region = MKCoordinateRegionMake(park.midCoordinate, span)
+        
+        mapView.region = region
+        
+        
     }
   
     func loadSelectedOptions() {
