@@ -24,6 +24,11 @@
 		D7403FFF1F01FB71001913DC /* MagicMountain.plist in Resources */ = {isa = PBXBuildFile; fileRef = D7403FFE1F01FB71001913DC /* MagicMountain.plist */; };
 		D74040011F01FC13001913DC /* Park.swift in Sources */ = {isa = PBXBuildFile; fileRef = D74040001F01FC13001913DC /* Park.swift */; };
 		D74040031F023B37001913DC /* KeenEye.plist in Resources */ = {isa = PBXBuildFile; fileRef = D74040021F023B37001913DC /* KeenEye.plist */; };
+		D74040051F0243B1001913DC /* Overlay.swift in Sources */ = {isa = PBXBuildFile; fileRef = D74040041F0243B1001913DC /* Overlay.swift */; };
+		D74040071F024577001913DC /* ParkMapOverlayView.swift in Sources */ = {isa = PBXBuildFile; fileRef = D74040061F024577001913DC /* ParkMapOverlayView.swift */; };
+		D740400A1F026801001913DC /* overlay_park.png in Resources */ = {isa = PBXBuildFile; fileRef = D74040081F026801001913DC /* overlay_park.png */; };
+		D740400B1F026801001913DC /* overlay_park@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = D74040091F026801001913DC /* overlay_park@2x.png */; };
+		D740400D1F0269C4001913DC /* keeneye.png in Resources */ = {isa = PBXBuildFile; fileRef = D740400C1F0269C4001913DC /* keeneye.png */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -47,6 +52,11 @@
 		D7403FFE1F01FB71001913DC /* MagicMountain.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = MagicMountain.plist; sourceTree = "<group>"; };
 		D74040001F01FC13001913DC /* Park.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = Park.swift; path = Models/Park.swift; sourceTree = "<group>"; };
 		D74040021F023B37001913DC /* KeenEye.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = KeenEye.plist; sourceTree = "<group>"; };
+		D74040041F0243B1001913DC /* Overlay.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = Overlay.swift; path = Overlays/Overlay.swift; sourceTree = "<group>"; };
+		D74040061F024577001913DC /* ParkMapOverlayView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = ParkMapOverlayView.swift; path = Overlays/ParkMapOverlayView.swift; sourceTree = "<group>"; };
+		D74040081F026801001913DC /* overlay_park.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = overlay_park.png; sourceTree = "<group>"; };
+		D74040091F026801001913DC /* overlay_park@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "overlay_park@2x.png"; sourceTree = "<group>"; };
+		D740400C1F0269C4001913DC /* keeneye.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = keeneye.png; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -77,6 +87,9 @@
 		076BF08F1680459100ACF08A /* Images */ = {
 			isa = PBXGroup;
 			children = (
+				D740400C1F0269C4001913DC /* keeneye.png */,
+				D74040081F026801001913DC /* overlay_park.png */,
+				D74040091F026801001913DC /* overlay_park@2x.png */,
 			);
 			name = Images;
 			sourceTree = "<group>";
@@ -99,6 +112,8 @@
 		076BF092168045C900ACF08A /* Overlays */ = {
 			isa = PBXGroup;
 			children = (
+				D74040041F0243B1001913DC /* Overlay.swift */,
+				D74040061F024577001913DC /* ParkMapOverlayView.swift */,
 			);
 			name = Overlays;
 			sourceTree = "<group>";
@@ -235,6 +250,9 @@
 				D7403FFF1F01FB71001913DC /* MagicMountain.plist in Resources */,
 				07866AC9165EE2B400D7BB3A /* Default-568h@2x.png in Resources */,
 				D74040031F023B37001913DC /* KeenEye.plist in Resources */,
+				D740400A1F026801001913DC /* overlay_park.png in Resources */,
+				D740400B1F026801001913DC /* overlay_park@2x.png in Resources */,
+				D740400D1F0269C4001913DC /* keeneye.png in Resources */,
 				07866ACC165EE2B400D7BB3A /* MainStoryboard_iPhone.storyboard in Resources */,
 				07866ACF165EE2B400D7BB3A /* MainStoryboard_iPad.storyboard in Resources */,
 			);
@@ -249,7 +267,9 @@
 			files = (
 				52D644161A0FFB7400CCA056 /* ParkMapViewController.swift in Sources */,
 				52D644181A0FFD2600CCA056 /* AppDelegate.swift in Sources */,
+				D74040051F0243B1001913DC /* Overlay.swift in Sources */,
 				52D644141A0FF9E500CCA056 /* MapOptionsViewController.swift in Sources */,
+				D74040071F024577001913DC /* ParkMapOverlayView.swift in Sources */,
 				D74040011F01FC13001913DC /* Park.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

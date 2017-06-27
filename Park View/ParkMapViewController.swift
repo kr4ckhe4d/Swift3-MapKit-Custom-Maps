@@ -39,7 +39,17 @@ class ParkMapViewController: UIViewController {
     }
   
     func loadSelectedOptions() {
-        // To be implemented
+        mapView.removeAnnotations(mapView.annotations)
+        mapView.removeOverlays(mapView.overlays)
+        
+        for option in selectedOptions {
+            switch (option) {
+            case .MapOverlay:
+                addOverlay()
+            default:
+                break
+            }
+        }
     }
   
     override func prepare(for segue: UIStoryboardSegue,   sender: Any?) {
@@ -54,11 +64,34 @@ class ParkMapViewController: UIViewController {
     }
   
     @IBAction func mapTypeChanged(_ sender: AnyObject) {
-        // To be implemented
+        let mapType = MapType(rawValue: mapTypeSegmentedControl.selectedSegmentIndex)
+        switch (mapType!) {
+        case MapType.standard:
+            mapView.mapType = .standard
+        case MapType.hybrid:
+            mapView.mapType = .hybrid
+        case MapType.satellite:
+            mapView.mapType = .satellite
+        }
+    }
+    
+    func addOverlay(){
+        let overlay = ParkMapOverlay(park: park)
+        mapView.add(overlay)
+        
     }
 }
 
 // MARK: - Map View delegate
 
 extension ParkMapViewController: MKMapViewDelegate {
+    func mapView(_ mapView: MKMapView, rendererFor overlay: MKOverlay) -> MKOverlayRenderer {
+        if overlay is ParkMapOverlay{
+            let magicMountainInage = UIImage(named: "overlay_park")
+            let overlayView = ParkMapOverlayView(overlay: overlay, overlayImage: magicMountainInage!)
+            
+            return overlayView
+        }
+        return MKOverlayRenderer()
+    }
 }
