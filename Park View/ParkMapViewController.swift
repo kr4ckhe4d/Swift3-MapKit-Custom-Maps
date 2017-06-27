@@ -32,7 +32,6 @@ class ParkMapViewController: UIViewController {
         let span = MKCoordinateSpanMake(fabs(latDelta), 0.0)
         
         let region = MKCoordinateRegionMake(park.midCoordinate, span)
-        
         mapView.region = region
         
         
