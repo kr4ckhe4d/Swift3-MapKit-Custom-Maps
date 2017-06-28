@@ -2,7 +2,7 @@
 //  ParkMapViewController.swift
 //  Park View
 //
-//  Created by Niv Yahel on 2014-11-09.
+//  Created by Nipuna H Herath on 2014-11-09.
 //  Copyright (c) 2014 Chris Wagner. All rights reserved.
 //
 
