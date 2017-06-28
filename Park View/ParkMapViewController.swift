@@ -33,8 +33,6 @@ class ParkMapViewController: UIViewController {
         
         let region = MKCoordinateRegionMake(park.midCoordinate, span)
         mapView.region = region
-        
-        
     }
   
     func loadSelectedOptions() {
